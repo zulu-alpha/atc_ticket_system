@@ -1,0 +1,24 @@
+// Set these to whatever you want or delete them completely
+respawnDelay = 3
+enableDebugConsole = 2;
+disabledAI= 1;
+
+
+// Everything below here is needed and must be merged with your description.ext file
+
+class CfgFunctions
+{
+    #include "tickets\cfgfunctions.hpp"
+
+};
+
+class CfgRemoteExec
+{
+	class Functions
+	{
+		#include "tickets\cfgRemoteExec_functions.hpp"
+	};
+};
+
+// Ticket specific description.ext respawn settings
+#include "tickets\description_settings.hpp"

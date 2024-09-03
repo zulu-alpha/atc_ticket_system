@@ -6,8 +6,8 @@ A respawn tickets system by Phoenix of Zulu-Alpha, made for ATC
 
 ATC has an issue with tickets.
 ATC has a 3 ticket (2 respawns) system, and a disconnect counts against one of those tickets.
-The players must go into spectator only when they have lost their last life/ticket.
 This must be changed.
+The players must go into spectator only when they have lost their last life/ticket.
 It is also required that a player cannot change classes once they started the mission.
 
 ## Requirements

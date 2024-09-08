@@ -37,9 +37,13 @@ class Tickets
 		{
 			description = "Set the player's tickets to 0 and kill them, in order to stop them from playing.";
 		}
-		class killPlayer
+		class killEndPlayer
 		{
 			description = "Set the player's tickets to 0 and kill them, in order to stop them from playing.";
+		}
+		class killEndPlayerOnLocal
+		{
+			description = "Does the part of killEndPlayer that needs to be done on the player's machine.";
 		}
 		class addPlayerEventHandlers
 		{

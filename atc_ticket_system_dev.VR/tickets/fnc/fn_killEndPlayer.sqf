@@ -17,6 +17,4 @@
 params ["_player"];
 
 _player setVariable [PLAYER_ENDED_FLAG, true, false];
-_current_tickets = [_player, nil, true] call BIS_fnc_respawnTickets;
-[-_current_tickets] remoteExec ["Tickets_fnc_safeRespawnTickets", _player];
-_player setDamage 1;
+remoteExec ["Tickets_fnc_killEndPlayerOnLocal", _player];

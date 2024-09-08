@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=16;
+		nextID=28;
 	};
 	class Camera
 	{
-		pos[]={4961.688,62.579136,2543.4482};
-		dir[]={0.66153306,-0.36679938,0.65408885};
-		up[]={0.26082972,0.9303,0.25789464};
-		aside[]={0.70309448,1.4901161e-008,-0.71109641};
+		pos[]={5062.1855,15.687437,2614.2375};
+		dir[]={0.40279636,-0.48413113,0.77678299};
+		up[]={0.22286671,0.87499088,0.4297927};
+		aside[]={0.88775527,-3.901805e-007,-0.46034282};
 	};
 };
 binarizationWanted=0;
@@ -92,7 +92,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=5;
+				items=9;
 				class Item0
 				{
 					dataType="Object";
@@ -153,6 +153,7 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						disableSimulation=1;
 					};
 					id=4;
 					type="B_crew_F";
@@ -171,6 +172,101 @@ class Mission
 						isPlayable=1;
 					};
 					id=6;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5061.6929,5.0014391,2632.0408};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						isPlayable=1;
+						disableSimulation=1;
+					};
+					id=21;
+					type="B_crew_F";
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5065.8359,5.0014391,2631.3862};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=23;
+					type="B_Pilot_F";
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5071.9502,5.0014391,2630.6921};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=25;
+					type="B_soldier_AAT_F";
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5077.8364,5.0014391,2626.8999};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=27;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{

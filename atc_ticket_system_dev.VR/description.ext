@@ -1,5 +1,5 @@
 // Set these to whatever you want or delete them completely
-respawnDelay = 3
+respawnDelay = 5;
 enableDebugConsole = 2;
 disabledAI= 1;
 

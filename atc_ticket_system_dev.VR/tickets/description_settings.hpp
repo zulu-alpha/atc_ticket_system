@@ -1,2 +1,2 @@
-respawnTemplates[] = {"Base", "Tickets", "EndMission"};  // Hides respawn timer
+respawnTemplates[] = {"Base", "Tickets", "EndMission", "Counter"};  // Hides respawn timer
 respawn = 3;

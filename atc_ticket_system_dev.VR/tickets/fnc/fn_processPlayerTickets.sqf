@@ -19,7 +19,7 @@ _persisted_number = TICKETS_GUID_TICKETS_MAPPING getOrDefault [_uid, -1];
 
 if (_persisted_number == -1) exitWith {
 	LOG_PLAYER(_player, MESSAGE);
-	[_player, INITIAL_TICKETS] call BIS_fnc_respawnTickets;
+	[INITIAL_TICKETS] remoteExec ["Tickets_fnc_safeRespawnTickets", _player];
 	TICKETS_GUID_TICKETS_MAPPING set [_uid, INITIAL_TICKETS];
 };
 
@@ -27,7 +27,8 @@ if (_persisted_number == -1) exitWith {
 
 if (_persisted_number > 0) exitWith {
 	LOG_PLAYER(_player, MESSAGE);
-	[_player, _persisted_number] call BIS_fnc_respawnTickets;
+	[_persisted_number] remoteExec ["Tickets_fnc_safeRespawnTickets", _player];
+	[format["You have %1 tickets left.", _persisted_number]] remoteExec ["Tickets_fnc_notifyHuman", _player];
 };
 
 if (_persisted_number == 0) exitWith {

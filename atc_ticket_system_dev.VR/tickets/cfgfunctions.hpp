@@ -45,5 +45,9 @@ class Tickets
 		{
 			description = "Start the ACE spectator mode for a player with ATC settings if the player has no tickets left.";
 		}
+		class safeRespawnTickets
+		{
+			description = "A wrapper function to safely assign tickets on the player's machine, even if the player is disabled.";
+		}
 	}
 };

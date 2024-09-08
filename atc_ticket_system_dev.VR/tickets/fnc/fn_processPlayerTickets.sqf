@@ -34,5 +34,5 @@ if (_persisted_number > 0) exitWith {
 if (_persisted_number == 0) exitWith {
 	LOG_PLAYER(_player, "Player has no tickets so ending the player");
 	["You have no remaining respawn tickets."] remoteExec ["Tickets_fnc_notifyHuman", _player];
-	[_player] call Tickets_fnc_endPlayer;
+	[_player] call Tickets_fnc_killPlayer;
 };

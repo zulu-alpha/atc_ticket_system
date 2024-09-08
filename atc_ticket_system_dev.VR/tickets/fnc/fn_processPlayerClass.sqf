@@ -25,5 +25,5 @@ if (_registerd_role != _current_role) exitWith {
 	LOG_PLAYER(_player, "Player class does not match registered class so ending");
 	_kill_reason = format ["You have been killed as you are joining as the class %1, but you previously joined as %2", _current_role, _registerd_role];
 	[_kill_reason] remoteExec ["Tickets_fnc_notifyHuman", _player];
-	[_player] call Tickets_fnc_endPlayer;
+	remoteExec ["Tickets_fnc_endPlayerMission", _player];
 };

@@ -10,3 +10,4 @@
 */
 params ["_message"];
 systemChat _message;
+hint _message;

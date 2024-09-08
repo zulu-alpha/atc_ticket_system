@@ -33,7 +33,11 @@ class Tickets
 		{
 			description = "Reduce the given player's persisted ticket count by 1.";
 		}
-		class endPlayer
+		class endPlayerMission
+		{
+			description = "Set the player's tickets to 0 and kill them, in order to stop them from playing.";
+		}
+		class killPlayer
 		{
 			description = "Set the player's tickets to 0 and kill them, in order to stop them from playing.";
 		}

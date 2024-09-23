@@ -11,6 +11,6 @@
 if (!hasInterface) exitWith {};
 
 [] spawn {
-	waitUntil {!isNull player};
+	waitUntil {!(isNull player) and (simulationEnabled player)};
 	[player] remoteExec ["Tickets_fnc_notifyServerOfPlayer", 2];
 };
